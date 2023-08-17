@@ -17,8 +17,8 @@
   "libraries": {
     "BO/1.0.0": {
       "type": "project",
-      "path": "../../../Downloads/TP02M5 - Pizza/BO/BO.csproj",
-      "msbuildProject": "../../../Downloads/TP02M5 - Pizza/BO/BO.csproj"
+      "path": "../BO/BO.csproj",
+      "msbuildProject": "../BO/BO.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -53,8 +53,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\dvallee2022\\Downloads\\TP02M5 - Pizza\\BO\\BO.csproj": {
-              "projectPath": "C:\\Users\\dvallee2022\\Downloads\\TP02M5 - Pizza\\BO\\BO.csproj"
+            "C:\\Users\\dvallee2022\\RiderProjects\\TPizza\\BO\\BO.csproj": {
+              "projectPath": "C:\\Users\\dvallee2022\\RiderProjects\\TPizza\\BO\\BO.csproj"
             }
           }
         }

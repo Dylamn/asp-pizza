@@ -4,14 +4,14 @@
     "C:\\Users\\dvallee2022\\RiderProjects\\TPizza\\TPizza\\TPizza.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dvallee2022\\Downloads\\TP02M5 - Pizza\\BO\\BO.csproj": {
+    "C:\\Users\\dvallee2022\\RiderProjects\\TPizza\\BO\\BO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dvallee2022\\Downloads\\TP02M5 - Pizza\\BO\\BO.csproj",
+        "projectUniqueName": "C:\\Users\\dvallee2022\\RiderProjects\\TPizza\\BO\\BO.csproj",
         "projectName": "BO",
-        "projectPath": "C:\\Users\\dvallee2022\\Downloads\\TP02M5 - Pizza\\BO\\BO.csproj",
+        "projectPath": "C:\\Users\\dvallee2022\\RiderProjects\\TPizza\\BO\\BO.csproj",
         "packagesPath": "C:\\Users\\dvallee2022\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dvallee2022\\Downloads\\TP02M5 - Pizza\\BO\\obj\\",
+        "outputPath": "C:\\Users\\dvallee2022\\RiderProjects\\TPizza\\BO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dvallee2022\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\dvallee2022\\Downloads\\TP02M5 - Pizza\\BO\\BO.csproj": {
-                "projectPath": "C:\\Users\\dvallee2022\\Downloads\\TP02M5 - Pizza\\BO\\BO.csproj"
+              "C:\\Users\\dvallee2022\\RiderProjects\\TPizza\\BO\\BO.csproj": {
+                "projectPath": "C:\\Users\\dvallee2022\\RiderProjects\\TPizza\\BO\\BO.csproj"
               }
             }
           }
