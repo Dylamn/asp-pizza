@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPizza", "TPizza\TPizza.csproj", "{CE758636-8C7A-4023-AA71-392F8B4D3341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BO", "..\..\Downloads\TP02M5 - Pizza\BO\BO.csproj", "{D051A102-0010-4025-8F53-874E744910B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE758636-8C7A-4023-AA71-392F8B4D3341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE758636-8C7A-4023-AA71-392F8B4D3341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE758636-8C7A-4023-AA71-392F8B4D3341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE758636-8C7A-4023-AA71-392F8B4D3341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D051A102-0010-4025-8F53-874E744910B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D051A102-0010-4025-8F53-874E744910B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D051A102-0010-4025-8F53-874E744910B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D051A102-0010-4025-8F53-874E744910B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
