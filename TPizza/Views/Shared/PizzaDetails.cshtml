@@ -1,0 +1,31 @@
+﻿@using BO
+@model BO.Pizza
+
+<hr>
+<dl class="row">
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Nom)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Nom)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Pate.Nom)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Pate.Nom)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Ingredients)
+    </dt>
+    <dd class="col-sm-10">
+        <ul>
+            @foreach (Ingredient ingr in Model.Ingredients)
+            {
+                <li>
+                    @Html.DisplayFor(ing => ingr.Nom)
+                </li>
+            }
+        </ul>
+    </dd>
+</dl>

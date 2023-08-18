@@ -8,7 +8,9 @@
 
     <ItemGroup>
       <ProjectReference Include="..\BO\BO.csproj" />
+
     </ItemGroup>
+
 
 
 

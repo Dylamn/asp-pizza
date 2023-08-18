@@ -1,0 +1,30 @@
+﻿@using BO
+@model TPizza.ViewModels.UpdatePizzaViewModel
+
+@{
+    ViewBag.Title = "Édition de pizza";
+    Layout = "_Layout";
+}
+
+<h2>Édition de pizza</h2>
+
+<form method="post" asp-action="Edit" asp-controller="Pizza">
+    <input type="hidden" asp-for="Id"/>
+    <div class="form-group">
+        <label asp-for="@Model.Name"></label>
+        <input asp-for="Name" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.SelectedPateId">Pâte</label>
+        <select asp-for="SelectedPateId" class="form-control"
+                asp-items="@(new SelectList(Model.Pates, nameof(Pate.Id), nameof(Pate.Nom)))">
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Ingredients"></label>
+        <select class="form-control" asp-for="SelectedIngredientsIds" multiple
+                asp-items="@(new MultiSelectList(Model.Ingredients, nameof(BO.Ingredient.Id), nameof(BO.Ingredient.Nom)))">
+        </select>
+    </div>
+    <input type="submit" value="Modifier" class="btn btn-primary"/>
+</form>

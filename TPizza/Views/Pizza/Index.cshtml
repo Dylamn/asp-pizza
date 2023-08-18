@@ -1,4 +1,5 @@
-﻿@model BO.Pizza
+﻿@using BO
+@model List<BO.Pizza>
 
 @{
     ViewBag.Title = "Liste de pizza";
@@ -6,3 +7,50 @@
 }
 
 <h2>Liste de pizza</h2>
+
+<a asp-action="Create" asp-controller="Pizza" class="btn btn-primary">Créer pizza</a>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            Nom
+        </th>
+        <th>
+            Pâte
+        </th>
+        <th>
+            Ingrédients
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var pizza in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(piz => pizza.Nom)
+            </td>
+            <td>
+                @Html.DisplayFor(piz => pizza.Pate.Nom)
+            </td>
+            <td>
+                <ul>
+                    @foreach (Ingredient ingr in pizza.Ingredients)
+                    {
+                        <li>
+                            @Html.DisplayFor(ing => ingr.Nom)
+                        </li>
+                    }
+                </ul>
+            </td>
+
+            <td>
+                @Html.ActionLink("Editer", "Edit", "Pizza", new { id = pizza.Id }) |
+                @Html.ActionLink("Détails", "Details", "Pizza", new { id = pizza.Id }) |
+                @Html.ActionLink("Supprimer", "ConfirmDelete", "Pizza", new { id = pizza.Id })
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

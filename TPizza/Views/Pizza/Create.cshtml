@@ -1,0 +1,28 @@
+﻿@using BO
+@model TPizza.ViewModels.CreatePizzaViewModel
+
+@{
+    ViewBag.Title = "Créer une pizza";
+    Layout = "_Layout";
+}
+
+<h2>Créer une pizza</h2>
+<hr>
+
+<form method="post" asp-action="Create" asp-controller="Pizza">
+    <div class="form-group">
+        <label asp-for="@Model.Name"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Pates"></label>
+        <select asp-for="SelectedPateId" class="form-control" 
+                asp-items="@(new SelectList(Model.Pates, nameof(Pate.Id), nameof(Pate.Nom)))"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Ingredients"></label>
+        <select asp-for="SelectedIngredientsIds" class="form-control" 
+                asp-items="@(new MultiSelectList(Model.Ingredients, nameof(Ingredient.Id), nameof(Ingredient.Nom)))" multiple></select>
+    </div>
+    <input type="submit" value="Créer" class="btn btn-primary" />
+</form>

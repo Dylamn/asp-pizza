@@ -1,0 +1,17 @@
+﻿@model BO.Pizza
+
+@{
+    ViewBag.Title = "Suppression de pizza";
+    Layout = "_Layout";
+}
+
+<h2>Suppression de pizza</h2>
+
+<partial name="PizzaDetails" model="Model"/>
+
+<form asp-action="Delete" method="post" asp-route-id="@Model.Id">
+    <input type="hidden" asp-for="Id" />
+    <input type="submit" value="Supprimer" class="btn btn-danger" />
+</form>
+
+<a asp-action="Index">Retour à la liste</a>

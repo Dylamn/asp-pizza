@@ -1,0 +1,17 @@
+﻿@using BO
+@model BO.Pizza
+
+@{
+    ViewBag.Title = $"Détails - {Model.Nom}";
+    Layout = "_Layout";
+}
+
+<h2>Détails - @Model.Nom</h2>
+<h4>Pizza</h4>
+
+<partial name="PizzaDetails" model="Model"/>
+
+<div>
+    @Html.ActionLink("Editer", "Edit", new {id = Model.Id}) |
+    @Html.ActionLink("Retour à la liste", "Index")
+</div>
